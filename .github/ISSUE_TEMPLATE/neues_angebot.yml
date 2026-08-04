@@ -1,0 +1,58 @@
+name: "✍️ Neues Angebot vorbereiten (Sales)"
+description: "Hier trägt der Vertriebler Kundendaten, Anschreiben, Sprache und die Battery-Passport-Variante ein."
+title: "[ANGEBOTS-ENTWURF]: "
+labels: ["Angebots-Entwurf"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔋 Bosch Battery Passport – Angebots-Erstellung
+        Willkommen im Angebots-Generator! Bitte füllen Sie die folgenden Felder aus. 
+        Das Sales-Execution-Team vergibt später die finale Angebotsnummer und startet die PDF-Erstellung.
+
+  - type: dropdown
+    id: sprache
+    attributes:
+      label: "🌐 Dokumentensprache"
+      description: "In welcher Sprache soll das Angebot für den Kunden generiert werden?"
+      options:
+        - "Deutsch"
+        - "English"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: variante
+    attributes:
+      label: "📦 Battery Passport Variante"
+      description: "Welches Paket aus der Single Source of Truth soll angeboten werden?"
+      options:
+        - "Battery Passport - S Edition (BBP-S)"
+        - "Weitere Varianten (XS, M, L, XL - Demnächst verfügbar)"
+    validations:
+      required: true
+
+  - type: input
+    id: kunden_name
+    attributes:
+      label: "🏢 Kundenname (Firma)"
+      placeholder: "z.B. Muster-Automotive GmbH"
+    validations:
+      required: true
+
+  - type: textarea
+    id: kunden_adresse
+    attributes:
+      label: "📍 Kundenadresse"
+      placeholder: "Musterstraße 42\n70173 Stuttgart\nDeutschland"
+    validations:
+      required: true
+
+  - type: textarea
+    id: anschreiben_individuell
+    attributes:
+      label: "✉️ Individuelles Anschreiben (Optional)"
+      description: "Falls Sie vom Standard-Anschreiben abweichen möchten, tragen Sie hier Ihren persönlichen Text ein. Ansonsten wird automatisch der standardisierte Bosch-Text verwendet."
+      placeholder: "Sehr geehrtes Team, danke für den netten Termin am..."
+    validations:
+      required: false
