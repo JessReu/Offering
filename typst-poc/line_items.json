@@ -1,0 +1,40 @@
+{
+  "line_items": [
+    {
+      "ID": "battery-pass-xs",
+      "Gruppe": "products",
+      "Bezeichnung": "Battery Passport XS",
+      "Einheit": "LE",
+      "Einzelpreis": 14142.0,
+      "Beschreibung": "SaaS Gebühr für die Nutzung der Battery Passport XS Software."
+    },
+    {
+      "ID": "agent-xs",
+      "Gruppe": "products",
+      "Bezeichnung": "Agent XS",
+      "Einheit": "LE",
+      "Einzelpreis": 14152.0,
+      "Beschreibung": "SaaS Gebühr für die Nutzung der Agent XS Software."
+    },
+    {
+      "ID": "semantic-stack-consulting",
+      "Gruppe": "services",
+      "Bezeichnung": "Bosch Semantic Stack Consulting",
+      "Einheit": "PT",
+      "Einzelpreis": 100.0,
+      "Beschreibung": "Beratung und Unterstützung bei der Implementierung und Nutzung des Bosch Semantic Stack."
+    }
+  ],
+  "groups": [
+    {
+      "ID": "products",
+      "Bezeichnung": "Produkte",
+      "Pos.": "1.1"
+    },
+    {
+      "ID": "services",
+      "Bezeichnung": "Dienstleistungen",
+      "Pos.": "1.2"
+    }
+  ]
+}
