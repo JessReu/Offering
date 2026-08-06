@@ -1,53 +1,231 @@
 # =========================================================================
-# 🗄️ SINGLE SOURCE OF TRUTH - BOSCH SEMANTIC STACK & BATTERY PASSPORT
+# 🗄️ SINGLE SOURCE OF TRUTH - MAC PRODUCT PORTFOLIO & CONTRACT MATRIX
 # =========================================================================
 
-# Stammdaten-Verantwortliche (Aus Ihrer neuen Tabelle)
-product_owner: "Patrick Schmid"
-representative: "Josepha Pfeiffer"
-phek_material_number: "613" # SaaS (ohne DL)
+# 1. SOFTWARE-AS-A-SERVICE (SaaS) PORTFOLIO
+saas_products:
+  PAS-BP-S:
+    bereich: PAS
+    produkt: Battery Passport
+    variante: Battery Passport S
+    kurztext_de: "* Batteriepass-Anwendung\n* Register digitaler Zwillinge mit 10.000 Batterie-Zwillingen\n* Semantischer Modellkatalog mit Batteriemodellen\n* 100 GB vollständig verwalteter Speicher"
+    kurztext_en: "* Battery Passport Application\n* Digital Twin Registry with 10,000 Battery Twins\n* Semantic Model Catalog with battery models\n* 100 GB fully managed storage"
+    preis: 39900.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Patrick Schmid
+    product_manager: Josepha Pfeiffer
+    agb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/99_Nexeed_customer_contract_templates/01_IAS/03_TermsConditions/10_DE/3-b_BCI_SaaS_Nutzungsbedingungen.pdf(1)/3-b_BCI_SaaS_Nutzungsbedingungen_2.5.pdf"
+    agb_link_en: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P01S049255-1109783333-920&status=validrevision"
+    lb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport.pdf(3)/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
+    lb_link_en: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport.pdf(2)/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
 
-# 1. Offizielle Software-Lizenzen (SaaS)
-products:
-  PAS-SEMANTIC-STACK:
-    name_de: "PAS Semantic Stack"
-    name_en: "PAS Semantic Stack"
-    description_de: "Grundplattform für den Datenaustausch und die semantische Modellierung im Catena-X-Umfeld."
-    description_en: "Base platform for data exchange and semantic modeling in the Catena-X environment."
-    price: "variabel"
-    unit_de: "LE"
-    unit_en: "LE"
-    category: "SaaS (ohne DL)"
-    status: "aktiv"
+  PAS-BP-M:
+    bereich: PAS
+    produkt: Battery Passport
+    variante: Battery Passport M
+    kurztext_de: "* Batteriepass-Anwendung\n* Register digitaler Zwillinge mit 50.000 Batterie-Zwillingen\n* Semantischer Modellkatalog mit Batteriemodellen\n* 2 TB vollständig verwalteter Speicher"
+    kurztext_en: "* Battery Passport Application\n* Digital Twin Registry with 50,000 Battery Twins\n* Semantic Model Catalog with battery models\n* 2TB fully managed storage"
+    preis: 59200.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Patrick Schmid
+    product_manager: Josepha Pfeiffer
+    agb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/99_Nexeed_customer_contract_templates/01_IAS/03_TermsConditions/10_DE/3-b_BCI_SaaS_Nutzungsbedingungen.pdf(1)/3-b_BCI_SaaS_Nutzungsbedingungen_2.5.pdf"
+    agb_link_en: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P01S049255-1109783333-920&status=validrevision"
+    lb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport.pdf(3)/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
+    lb_link_en: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport.pdf(2)/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
 
-  PAS-BATTERY-PASSPORT:
-    name_de: "PAS Battery Passport Application"
-    name_en: "PAS Battery Passport Application"
-    description_de: "Applikation zur gesetzeskonformen Erstellung und Verwaltung von digitalen Batterie-Herkunftsnachweisen."
-    description_en: "Application for compliant creation and management of digital battery certificates of origin."
-    price: "variabel"
-    unit_de: "LE"
-    unit_en: "LE"
-    category: "SaaS (ohne DL)"
-    status: "aktiv"
+  PAS-BP-L:
+    bereich: PAS
+    produkt: Battery Passport
+    variante: Battery Passport L
+    kurztext_de: "* Batteriepass-Anwendung\n* Register digitaler Zwillinge mit 250.000 Batterie-Zwillingen\n* Semantischer Modellkatalog mit Batteriemodellen\n* 4 TB vollständig verwalteter Speicher"
+    kurztext_en: "* Battery Passport Application\n* Digital Twin Registry with 250,000 Battery Twins\n* Semantic Model Catalog with battery models\n* 4 TB fully managed storage"
+    preis: 102000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Patrick Schmid
+    product_manager: Josepha Pfeiffer
+    agb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/99_Nexeed_customer_contract_templates/01_IAS/03_TermsConditions/10_DE/3-b_BCI_SaaS_Nutzungsbedingungen.pdf(1)/3-b_BCI_SaaS_Nutzungsbedingungen_2.5.pdf"
+    agb_link_en: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P01S049255-1109783333-920&status=validrevision"
+    lb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport.pdf(3)/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
+    lb_link_en: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport.pdf(2)/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
 
-# 2. Rechtlich geprüfte Dokumenten-Links (Direkt aus Ihrer Tabelle!)
+  PAS-BP-XL:
+    bereich: PAS
+    produkt: Battery Passport
+    variante: Battery Passport XL
+    kurztext_de: "* Batteriepass-Anwendung\n* Register digitaler Zwillinge mit 1.000.000 Batterie-Zwillingen\n* Semantischer Modellkatalog mit Batteriemodellen\n* 10 TB vollständig verwalteter Speicher"
+    kurztext_en: "* Battery Passport Application\n* Digital Twin Registry with 1,000,000 Battery Twins\n* Semantic Model Catalog with battery models\n* 10 TB fully managed storage"
+    preis: 190000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Patrick Schmid
+    product_manager: Josepha Pfeiffer
+    agb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/99_Nexeed_customer_contract_templates/01_IAS/03_TermsConditions/10_DE/3-b_BCI_SaaS_Nutzungsbedingungen.pdf(1)/3-b_BCI_SaaS_Nutzungsbedingungen_2.5.pdf"
+    agb_link_en: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P01S049255-1109783333-920&status=validrevision"
+    lb_link_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport.pdf(3)/2026-07_Leistungsbeschreibung_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
+    lb_link_en: "https://sites.inside-share4.bosch.com/sites/049255/Documents/_Up/RSet/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport.pdf(2)/2026-07_ServiceDescription_Bosch_Insights_Module_Battery%20Passport_0.1.pdf"
+
+  # --- PAS: Semantic Stack ---
+  PAS-SS-SS:
+    bereich: PAS
+    produkt: Semantic Stack
+    variante: Semantic Stack Starter
+    kurztext_de: "* 10 User\n* Register digitaler Zwillinge mit 10.000 digitalen Zwillingen\n* Semantischer Modellkatalog\n* 100 GB vollständig verwalteter Speicher\n* Alle Datenmanagement-Funktionen"
+    kurztext_en: "* 10 User\n* Digital Twin Registry with 10,000 Digital Twins\n* Semantic Model Catalog\n* 100 GB of fully managed storage\n* all data management features"
+    preis: 0.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Ulrich Wolters
+    product_manager: Steffen Stadtmüller
+
+  PAS-SS-S:
+    bereich: PAS
+    produkt: Semantic Stack
+    variante: Semantic Stack S
+    kurztext_de: "* Digital Twin Registry mit 50.000 digitalen Zwillingen\n* Semantischer Modellkatalog\n* 2 TB vollständig verwalteter Speicher\n* 3 maßgeschneiderte Datenprodukte (Aspekttypen)\n* Alle Datenmanagement-Funktionen"
+    kurztext_en: "* Digital Twin Registry with 50,000 Digital Twins\n* Semantic Model Catalog\n* 2TB of fully managed storage\n* 3 custom data products (Aspect Types)\n* all data management features"
+    preis: 42000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Ulrich Wolters
+    product_manager: Steffen Stadtmüller
+
+  PAS-SS-M:
+    bereich: PAS
+    produkt: Semantic Stack
+    variante: Semantic Stack M
+    kurztext_de: "* Digital Twin Registry mit 250.000 digitalen Zwillingen\n* Semantischer Modellkatalog\n* 10 TB vollständig verwalteter Speicher\n* 5 maßgeschneiderte Datenprodukte (Aspekttypen)\n* Alle Datenmanagement-Funktionen"
+    kurztext_en: "* Digital Twin Registry with 250,000 Digital Twins\n* Semantic Model Catalog\n* 10TB of fully managed storage\n* 5 custom data products (Aspect Types)\n* all data management features"
+    preis: 113500.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Ulrich Wolters
+    product_manager: Steffen Stadtmüller
+
+  PAS-SS-L:
+    bereich: PAS
+    produkt: Semantic Stack
+    variante: Semantic Stack L
+    kurztext_de: "* Digital Twin Registry mit 1.000.000 digitalen Zwillingen\n* Semantischer Modellkatalog\n* 50 TB vollständig verwalteter Speicher\n* 10 maßgeschneiderte Datenprodukte (Aspekttypen)\n* Alle Datenmanagement-Funktionen"
+    kurztext_en: "* Digital Twin Registry with 1,000,000 Digital Twins\n* Semantic Model Catalog\n* 50TB of fully managed storage\n* 10 custom data products (Aspect Types)\n* all data management features"
+    preis: 340000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Ulrich Wolters
+    product_manager: Steffen Stadtmüller
+
+  PAS-SS-XL:
+    bereich: PAS
+    produkt: Semantic Stack
+    variante: Semantic Stack XL
+    kurztext_de: "* Digital Twin Registry mit 10.000.000 digitalen Zwillingen\n* Semantischer Modellkatalog\n* 250 TB vollständig verwalteter Speicher\n* 20 maßgeschneiderte Datenprodukte (Aspekttypen)\n* Alle Datenmanagement-Funktionen"
+    kurztext_en: "* Digital Twin Registry with 10,000,000 Digital Twins\n* Semantic Model Catalog\n* 250TB of fully managed storage\n* 20 custom data products (Aspect Types)\n* all data management features"
+    preis: 1030000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Ulrich Wolters
+    product_manager: Steffen Stadtmüller
+
+  # --- AAI: Agentic AI ---
+  AAI-EXPLORE:
+    bereich: AAI
+    produkt: Agentic AI
+    variante: Agentic AI Explore
+    kurztext_de: "Der Shopfloor AI Agent Cloud Service ist eine vollständig verwaltete, mandantenfähige Software-as-a-Service (SaaS)-Plattform, die es Kunden ermöglicht, auf LLM-basierende Agenten in einer sicheren, unternehmenstauglichen Cloud-Umgebung auszuführen. Inkl. 5.000 Agent Credits."
+    kurztext_en: "The Shopfloor AI Agent Cloud Service is a fully managed, multi-tenant Software-as-a-Service (SaaS) platform that enables customers to design, build, and run LLM-based agents in a secure, enterprise-grade cloud environment. Incl. 5,000 Agent Credits."
+    preis: 35000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Ulrich Wolters
+    product_manager: Steffen Stadtmüller
+
+  AAI-SCALE:
+    bereich: AAI
+    produkt: Agentic AI
+    variante: Agentic AI Scale
+    kurztext_de: "Der Shopfloor AI Agent Cloud Service ist eine vollständig verwaltete, mandantenfähige Software-as-a-Service (SaaS)-Plattform, die es Kunden ermöglicht, auf LLM-basierende Agenten in einer sicheren, unternehmenstauglichen Cloud-Umgebung auszuführen. Inkl. 25.000 Agent Credits."
+    kurztext_en: "The Shopfloor AI Agent Cloud Service is a fully managed, multi-tenant Software-as-a-Service (SaaS) platform that enables customers to design, build, and run LLM-based agents in a secure, enterprise-grade cloud environment. Incl. 25,000 Agent Credits."
+    preis: 145000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Philipp Glaser
+    product_manager: Ben Bischoff
+
+  AAI-TRANSFORM:
+    bereich: AAI
+    produkt: Agentic AI
+    variante: Agentic AI Transform
+    kurztext_de: "Der Shopfloor AI Agent Cloud Service ist eine vollständig verwaltete, mandantenfähige Software-as-a-Service (SaaS)-Plattform, die es Kunden ermöglicht, auf LLM-basierende Agenten in einer sicheren, unternehmenstauglichen Cloud-Umgebung auszuführen. Inkl. 80.000 Agent Credits."
+    kurztext_en: "The Shopfloor AI Agent Cloud Service is a fully managed, multi-tenant Software-as-a-Service (SaaS) platform that enables customers to design, build, and run LLM-based agents in a secure, enterprise-grade cloud environment. Incl. 80,000 Agent Credits."
+    preis: 415000.0
+    einheit: LE
+    kategorie: SaaS (ohne DL)
+    materialnummer: "613"
+    phek_faktor: "N/A"
+    product_owner: Philipp Glaser
+    product_manager: Ben Bischoff
+
+# 2. PROFESSIONAL SERVICES & CONSULTING (Dienstleistungen)
+services:
+  PAS-SC:
+    bereich: PAS
+    produkt: Service
+    variante: Solution Consulting
+    kurztext_de: "Servicekontingent zur Standardimplementierung der Bosch Digital Battery Passport Software Lösung mit Datenintegration aus bis zu 2 Datenquellen. Dienstleistungskontingent mit einer Abschätzung der Personentage. Die Abrechnung erfolgt nach tatsächlichem Aufwand."
+    kurztext_en: "Service contingent for the standard implementation of the Bosch Digital Battery Passport Software Solution with data integration from up to 2 data sources. Service contingent with an estimate of person-days. Billing is based on actual effort."
+    preis: 1560.0
+    einheit: PT
+    kategorie: DL
+    materialnummer: "573"
+    phek_faktor: "1807000573"
+    product_owner: Ulrich Wolters
+    product_manager: Steffen Stadtmüller
+
+  AAI-II:
+    bereich: AAI
+    produkt: Service
+    variante: IT Integration
+    kurztext_de: "Dienstleistungskontingent auf Grundlage einer Aufwandsschätzung in Personentagen. Konfiguration von Datenverbindungen und Anbindung von Softwaresystemen (Voraussetzung: Die zu integrierenden Datenquellen und anzubindende Software müssen über eine webbasierte Programmschnittstelle (Web-API) verfügen). Umsetzung der folgenden zwei geplanten Anwendungsfälle: • Anwendungsfall 1: Interne Instandhaltung • Anwendungsfall 2: Field Service"
+    kurztext_en: "Service quota based on an effort estimation in person-days. Configuration of data connections and integration of software systems (Prerequisite: The data sources to be integrated and the software to be connected must have a web-based application programming interface (web API)). Implementation of the following two planned use cases: • Use case 1: Internal Maintenance • Use case 2: Field Service"
+    preis: 1560.0
+    einheit: PT
+    kategorie: DL
+    materialnummer: "573"
+    phek_faktor: "1807000573"
+    product_owner: Ulrich Wolters
+    product_manager: Philipp Glaser
+
+# 3. GLOBAL CONTRACTS (Spezifische, übergeordnete Dokumenten-Links)
 contracts:
-  kurztext_sot: "https://sites.inside-share4.bosch.com/sites/049255/_layouts/15/WopiFrame2.aspx?sourcedoc=%7BF56D2220-9B88-4749-855F-29BE1BC548C8%7D&file=__Kurzbeschreibungen_Nexeed_%20All-Applications_DE_ENG.docx&action=default&DefaultItemOpen=1"
-  lzb_link: "https://rb-wam.bosch.com/socos-bmg/SOCOS/documents/bmg101/gl/10080/BMGGL-61080-092_VAW_N_DE_2021-03-16.pdf"
-  nda_de: "https://sites.inside-share4.bosch.com/sites/049255/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7123df10-d1c0-4e11-a2de-aeb58938410e%7d&action=default"
-  nda_en: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P14S049255-2018741866-245575&status=validrevision"
-  avv_azure_de: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P01S049255-1109783333-920&status=validrevision"
-  avv_azure_en: "https://sites.inside-share4.bosch.com/sites/049255/_layouts/15/WopiFrame2.aspx?sourcedoc=%7b2f7d1837-f78a-43ff-a2f9-c9261d91e721%7d&action=default"
-  saas_agb_de: "https://sites.inside-share4.bosch.com/sites/049255/Documents/99_Nexeed_customer_contract_templates/01_IAS/03_TermsConditions/10_DE/3-b_BCI_SaaS_Nutzungsbedingungen.pdf(1)/3-b_BCI_SaaS_Nutzungsbedingungen_2.5.pdf"
-  saas_agb_en: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P01S049255-1109783333-920&status=validrevision"
+  nda:
+    de: "https://sites.inside-share4.bosch.com/sites/049255/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7123df10-d1c0-4e11-a2de-aeb58938410e%7d&action=default"
+    en: "https://inside-share-hosted-apps.bosch.com/DMS/GetDocumentService/Document.svc/GetDocumentURL?documentID=P14S049255-2018741866-245575&status=validrevision"
+  avv_cloud:
+    de: "https://sites.inside-share4.bosch.com/sites/049255/_layouts/15/WopiFrame2.aspx?sourcedoc=%7ba0c5ce82-1804-4984-8f74-ddcc8aabce8b%7d&action=default"
+    en: "https://sites.inside-share4.bosch.com/sites/049255/_layouts/15/WopiFrame.aspx?sourcedoc=%7b2f7d1837-f78a-43ff-a2f9-c9261d91e721%7d&action=default"
   sla_kunde: "https://sites.inside-share4.bosch.com/sites/049255/Documents/99_Nexeed_customer_contract_templates/07_RBS/02_Specification_Leistungsbeschreibung/10_DE/Service%20Level%20Agreement_Bosch%20Semantic%20Stack_KUNDE.pdf(1)/Service%20Level%20Agreement_Bosch%20Semantic%20Stack_KUNDE_1.0.pdf"
-
-# 3. Zweisprachige Standard-Anschreiben
-text_blocks:
-  intro_de: |
-    Sehr geehrte Damen und Herren,
-    vielen Dank für Ihr Vertrauen. Anbei erhalten Sie unser verbindliches Angebot für die Nutzung des Bosch Semantic Stack und der Battery Passport Application.
-  intro_en: |
-    Dear Sir or Madam,
-    thank you for your trust. Please find attached our binding offer for the usage of the Bosch Semantic Stack and the Battery Passport Application.
