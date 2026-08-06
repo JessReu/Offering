@@ -80,13 +80,44 @@ body:
       required: true
 
   # ==========================================
-  # SEKTION 3: COMPLIANCE
+  # SEKTION 3: ANSCHREIBEN & KOMMUNIKATION (NEU!)
   # ==========================================
   - type: markdown
     attributes:
       value: |
         ---
-        ### 3. Compliance & Vorprüfungen
+        ### 3. Anschreiben & Kundenkommunikation
+
+  - type: dropdown
+    id: anschreiben_anrede
+    attributes:
+      label: "Anrede im Angebotsschreiben"
+      description: "Wie soll der Kunde im Anschreiben angesprochen werden?"
+      options:
+        - "Sehr geehrte Damen und Herren,"
+        - "Sehr geehrte Frau / Sehr geehrter Herr,"
+        - "Dear Sir or Madam,"
+        - "Dear Team,"
+    validations:
+      required: true
+
+  - type: textarea
+    id: anschreiben_text
+    attributes:
+      label: "Individueller Einleitungstext / Anschreiben"
+      description: "Gib hier deinen persönlichen Anschreibentext ein. Falls du nichts einträgst, wird automatisch der standardisierte MAC-Einleitungstext aus dem Datenkatalog genutzt."
+      placeholder: "z.B. Vielen Dank für das angenehme Gespräch auf der Messe..."
+    validations:
+      required: false
+
+  # ==========================================
+  # SEKTION 4: COMPLIANCE
+  # ==========================================
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 4. Compliance & Vorprüfungen
 
   - type: dropdown
     id: nda_check
@@ -112,13 +143,13 @@ body:
       required: true
 
   # ==========================================
-  # SEKTION 4: SOFTWARE-AS-A-SERVICE
+  # SEKTION 5: SOFTWARE-AS-A-SERVICE
   # ==========================================
   - type: markdown
     attributes:
       value: |
         ---
-        ### 4. Software-as-a-Service (SaaS) Tarife
+        ### 5. Software-as-a-Service (SaaS) Tarife
 
   - type: dropdown
     id: saas_produkt
@@ -163,13 +194,13 @@ body:
       required: true
 
   # ==========================================
-  # SEKTION 5: SERVICES & PROFESSIONAL SERVICES
+  # SEKTION 6: SERVICES & PROFESSIONAL SERVICES
   # ==========================================
   - type: markdown
     attributes:
       value: |
         ---
-        ### 5. Professional Services (Optionale Dienstleistungen)
+        ### 6. Professional Services (Optionale Dienstleistungen)
 
   - type: dropdown
     id: service_produkt
@@ -201,3 +232,21 @@ body:
       label: "Positionstext Dienstleistung"
       description: "Beschreibe hier kurz, welche Aufgaben bei der Dienstleistung übernommen werden."
       placeholder: "z.B. Unterstützung bei der Systemintegration, Anbindung an Fabrik-MES-Systeme..."
+
+  # ==========================================
+  # SEKTION 7: SONDERKONDITIONEN & ABWEICHENDE AGBs (NEU!)
+  # ==========================================
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 7. Sonderkonditionen & Abweichungen
+
+  - type: textarea
+    id: abweichende_bedingungen
+    attributes:
+      label: "Abweichende AGBs / Sonderbedingungen"
+      description: "Trage hier abweichende Bedingungen ein, falls ein spezieller Rahmenvertrag vorliegt (inkl. Rahmenvertragsnummer)."
+      placeholder: "z.B. Es gilt der Rahmenvertrag mit der Vertragsnummer..."
+    validations:
+      required: false
