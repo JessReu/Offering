@@ -14,8 +14,8 @@ body:
         
         *Alle verlinkten Richtlinien entsprechen dem aktuellen Freigabestand der MAC MASTER MATRIX.*
 
-# ==========================================
-  # SEKTION 1: IN-STEP PROJEKTPRÜFUNG (DIREKT ALS ERSTES!)
+  # ==========================================
+  # SEKTION 1: IN-STEP PROJEKTPRÜFUNG
   # ==========================================
   - type: markdown
     attributes:
@@ -26,8 +26,8 @@ body:
   - type: dropdown
     id: instep_bekannt
     attributes:
-      label: "Ist dir bereits eine Projektnummer aus In-STEP bekannt?"
-      description: "Wähle 'Ja', wenn das Projekt bereits in InStep angelegt wurde."
+      label: "Ist dir bereits eine Projektnummer aus in-STEP bekannt?"
+      description: "Wähle 'Ja', wenn das Projekt bereits in in-STEP angelegt wurde."
       options:
         - "Ja"
         - "Nein (Bitte Hinweis unten beachten!)"
@@ -48,7 +48,7 @@ body:
       value: |
         > 🛑 **Wichtiger Hinweis bei fehlender in-STEP-Nummer:**
         > Falls dir noch **keine** Projektnummer bekannt ist, kontaktiere direkt das Sales Execution Team unter:
-        > [Order.Manufacturing-Co-Intelligence@bosch.com](mailto:Order.Manufacturing-Co-Intelligence@bosch.com?subject=Anforderung%20InStep-Projektnummer) zwecks Anlage des Projekts. 
+        > [Order.Manufacturing-Co-Intelligence@bosch.com](mailto:Order.Manufacturing-Co-Intelligence@bosch.com?subject=Anforderung%20InStep-Projektnummer) zwecks Anlage des Projekts.
 
   # ==========================================
   # SEKTION 2: PROJEKT- & KUNDENDATEN
@@ -59,7 +59,7 @@ body:
         ---
         ### 2. Projekt- & Kundendaten
 
-- type: dropdown
+  - type: dropdown
     id: sprache
     attributes:
       label: "Dokumentensprache"
@@ -74,7 +74,7 @@ body:
     id: kunden_name
     attributes:
       label: "Kundenname (Firma)"
-      description: "Trage bitte den Kundennamen ein inkl. Rechtseinheit"
+      description: "Trage bitte den Kundennamen ein inkl. Rechtseinheit."
       placeholder: "z.B. Robert Bosch GmbH (intern) oder Kundenname GmbH (extern)"
     validations:
       required: true
@@ -114,7 +114,7 @@ body:
   # ==========================================
   # SEKTION 4: SOFTWARE-AS-A-SERVICE
   # ==========================================
-   type: markdown
+  - type: markdown
     attributes:
       value: |
         ---
@@ -124,16 +124,20 @@ body:
     id: saas_produkt
     attributes:
       label: "Wähle das SaaS-Produkt aus:"
-      description: "Diese Optionen entsprechen den offiziellen Tarifen deiner Preisliste."
+      description: "Diese Optionen entsprechen exakt den IDs in deinem Datenkatalog."
       options:
-        - "PAS Battery Passport S (39.900,00 € / Jahr)"
-        - "PAS Battery Passport M (59.200,00 € / Jahr)"
-        - "PAS Battery Passport L (102.000,00 € / Jahr)"
-        - "PAS Battery Passport XL (190.000,00 € / Jahr)"
-        - "PAS Semantic Stack S (42.000,00 € / Jahr)"
-        - "AAI Agentic AI Explore (35.000,00 € / Jahr)"
-        - "AAI Agentic AI Scale (145.000,00 € / Jahr)"
-        - "AAI Agentic AI Transform (415,000,00 € / Jahr)"
+        - "PAS-BP-S: PAS Battery Passport S (39.900,00 € / Jahr)"
+        - "PAS-BP-M: PAS Battery Passport M (59.200,00 € / Jahr)"
+        - "PAS-BP-L: PAS Battery Passport L (102.000,00 € / Jahr)"
+        - "PAS-BP-XL: PAS Battery Passport XL (190.000,00 € / Jahr)"
+        - "PAS-SS-SS: PAS Semantic Stack Starter (0,00 € / Jahr)"
+        - "PAS-SS-S: PAS Semantic Stack S (42.000,00 € / Jahr)"
+        - "PAS-SS-M: PAS Semantic Stack M (113.500,00 € / Jahr)"
+        - "PAS-SS-L: PAS Semantic Stack L (340.000,00 € / Jahr)"
+        - "PAS-SS-XL: PAS Semantic Stack XL (1.030.000,00 € / Jahr)"
+        - "AAI-EXPLORE: Agentic AI Explore (35.000,00 € / Jahr)"
+        - "AAI-SCALE: Agentic AI Scale (145.000,00 € / Jahr)"
+        - "AAI-TRANSFORM: Agentic AI Transform (415.000,00 € / Jahr)"
         - "Kein SaaS-Produkt (Nur Dienstleistung)"
     validations:
       required: true
@@ -172,31 +176,14 @@ body:
     attributes:
       label: "Wähle das Dienstleistungsprodukt aus:"
       options:
-        - "PAS Solution Consulting (1.560,00 € / Personentag)"
-        - "AAI IT Integration Services (1.560,00 € / Personentag)"
+        - "PAS-SC: PAS Solution Consulting (1.560,00 € / Personentag)"
+        - "AAI-II: AAI IT Integration Services (1.560,00 € / Personentag)"
         - "Keine Dienstleistung benötigt"
 
   - type: input
     id: service_tage
     attributes:
       label: "Gewünschtes Dienstleistungsvolumen (in Personentagen)"
-      placeholder: "z.B. 10"
-
-  - type: dropdown
-    id: reisekosten
-    attributes:
-      label: "Reisekosten-Regelung"
-      options:
-        - "Abrechnung nach Aufwand (gemäß Bosch-Reiserichtlinie)"
-        - "Reisekostenpauschale vereinbart"
-        - "Keine Reisekosten (Ausschließlich Remote-Erbringung)"
-        ---
-        ### 5. Dienstleistungen & Trainings (Optional)
-
-  - type: input
-    id: service_tage
-    attributes:
-      label: "Dienstleistungsvolumen (in Personentagen)"
       placeholder: "z.B. 10"
 
   - type: dropdown
