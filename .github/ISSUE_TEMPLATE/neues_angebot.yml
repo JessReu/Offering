@@ -1,146 +1,203 @@
-name: "✍️ Neues Angebot anfordern (OTT Digital)"
-description: "Digitales Angebots-Anforderungs-Formular (ehemals Excel-Tabelle)."
-title: "[OTT-ANFORDERUNG]: "
+name: "Deal Acceleration Template"
+description: "Erfasse hier schnell und fehlerfrei alle vertraglichen und kaufmännischen Daten für dein MAC-Angebot."
+title: "[Anforderung]: "
 labels: ["Angebots-Erstellung"]
 body:
   - type: markdown
     attributes:
       value: |
-        # 🔋 Bosch Battery Passport – Angebots-Anforderung (OTT)
-        Bitte füllen Sie diese digitale Anforderung aus. 
-        * **Gelbe Felder** = Pflichtfelder (müssen ausgefüllt werden)
-        * **Blaue Felder** = Optionale Felder (Vorauswahl abweichend)
+        # Manufacturing Co-Intelligence
+        ## MAC Deal Acceleration Template (DAT)
+        
+        Hi! Trage hier einfach die kaufmännischen und vertraglichen Details für dein Angebot ein. 
+        Pflichtfelder sind für dich markiert, damit die Erstellung im Sales Execution Team danach sofort und ohne Rückfragen durchläuft.
+        
+        *Alle verlinkten Richtlinien entsprechen dem aktuellen Freigabestand der MAC MASTER MATRIX.*
 
   # ==========================================
-  # 🟨 PFLICHTFELDER (Ehemals GELB)
+  # SEKTION 1: IN-STEP PROJEKTPRÜFUNG
   # ==========================================
   - type: markdown
     attributes:
-      value: "### 🟨 Pflichtangaben (Vor Angebotserstellung prüfen!)"
+      value: |
+        ---
+        ### 1. InStep-Projektprüfung (Vorab-Check)
 
   - type: dropdown
-    id: nda_check
+    id: instep_bekannt
     attributes:
-      label: "🔒 Non-Disclosure Agreement (NDA)"
-      description: "Nur bei externen Kunden notwendig. [Link NDA Richtlinie](https://inside-docupedia.bosch.com/confluence/display/SOM/NDA+-+Geheimhaltungsvertrag?src=contextnavpagetreemode)"
+      label: "Ist dir bereits eine Projektnummer aus In-STEP bekannt?"
+      description: "Wähle 'Ja', wenn das Projekt bereits in InStep angelegt wurde."
       options:
-        - "NDA liegt bereits vor"
-        - "NDA nicht notwendig (z.B. Interner Kunde)"
-        - "NDA muss noch geschlossen werden"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: laenderfreigabe
-    attributes:
-      label: "🌍 Länderfreigabe PAS"
-      description: "Ist das Land für die Erbringung freigegeben? [Link Länderfreigabe](https://inside-docupedia.bosch.com/confluence/pages/viewpage.action?pageId=3839556221)"
-      options:
-        - "Ja (Freigabe erteilt)"
-        - "Nein (Sonderfreigabe erforderlich)"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: kunde_typ
-    attributes:
-      label: "🏢 Kundentyp"
-      options:
-        - "Intern (Geschäftsbereich)"
-        - "Extern"
-        - "Joint Venture (z.B. UAES / BHSS)"
+        - "Ja"
+        - "Nein (Bitte Hinweis unten beachten!)"
     validations:
       required: true
 
   - type: input
     id: instep_nummer
     attributes:
-      label: "🔢 InStep Nummer"
-      description: "Bereits angelegte Nummer eintragen (z.B. 9200xxx.xxx)"
+      label: "InStep-Nummer"
+      description: "Falls du oben 'Ja' ausgewählt hast: Trage hier bitte die zugehörige Projektnummer ein (z.B. 9200xxx.xxx)."
       placeholder: "9200123.001"
     validations:
-      required: true
+      required: false
 
-  - type: input
-    id: kunden_name
+  - type: markdown
     attributes:
-      label: "🏢 Kundenname (Firma)"
-      placeholder: "z.B. FeP/PS oder VW/EXT"
-    validations:
-      required: true
+      value: |
+        > 🛑 **Wichtiger Hinweis bei fehlender in-STEP-Nummer:**
+        > Falls dir noch **keine** Projektnummer bekannt ist, kontaktiere direkt das Sales Execution Team unter:
+        > [Order.Manufacturing-Co-Intelligence@bosch.com](mailto:Order.Manufacturing-Co-Intelligence@bosch.com?subject=Anforderung%20InStep-Projektnummer) zwecks Anlage des Projekts.
 
-  - type: textarea
-    id: lieferadresse
+  # ==========================================
+  # SEKTION 2: PROJEKT- & KUNDENDATEN
+  # ==========================================
+  - type: markdown
     attributes:
-      label: "📍 Lieferadresse (Kunde)"
-      placeholder: "Strasse, Hausnummer, PLZ, Ort, Land"
-    validations:
-      required: true
-
-  - type: input
-    id: projekt_bezeichnung
-    attributes:
-      label: "🏷️ Bezeichnung Projekt (InStep/Opportunity)"
-      placeholder: "z.B. Battery Passport S Integration"
-    validations:
-      required: true
-
-  - type: input
-    id: liefertermin
-    attributes:
-      label: "📅 Geplanter Liefertermin (dd/mm/jjjj)"
-      placeholder: "31/12/2026"
-    validations:
-      required: true
+      value: |
+        ---
+        ### 2. Projekt- & Kundendaten
 
   - type: dropdown
     id: sprache
     attributes:
-      label: "🌐 Sprache für Angebot"
+      label: "Dokumentensprache"
+      description: "In welcher Sprache soll das Angebot für deinen Kunden erzeugt werden?"
       options:
         - "Deutsch"
         - "English"
     validations:
       required: true
 
+  - type: input
+    id: kunden_name
+    attributes:
+      label: "Kundenname (Firma)"
+      description: "Trage bitte den Kundennamen ein inkl. Rechtseinheit."
+      placeholder: "z.B. Robert Bosch GmbH (intern) oder Kundenname GmbH (extern)"
+    validations:
+      required: true
+
   # ==========================================
-  # 🟦 OPTIONALE FELDER (Ehemals BLAU)
+  # SEKTION 3: COMPLIANCE
   # ==========================================
   - type: markdown
     attributes:
-      value: "### 🟦 Optionale Angaben (Abweichende Voraussetzungen)"
-
-  - type: input
-    id: angebotsgueltigkeit
-    attributes:
-      label: "⏳ Angebotsgültigkeit (Standard = 3 Monate)"
-      placeholder: "z.B. 02.11.2026"
-    validations:
-      required: false
-
-  - type: textarea
-    id: anschreiben_text
-    attributes:
-      label: "✉️ Anschreiben-Text (Anrede / persönliches Anschreiben)"
-      description: "Bei kurzen Anschreiben, Text einfach hier eingeben."
-      placeholder: "Sehr geehrte Damen und Herren, anbei erhalten Sie..."
-    validations:
-      required: false
+      value: |
+        ---
+        ### 3. Compliance & Vorprüfungen
 
   - type: dropdown
-    id: rbs_applikation
+    id: nda_check
     attributes:
-      label: "💻 RBS Applikation (SaaS-Lizenz)"
+      label: "Geheimhaltungsvereinbarung (NDA)"
+      description: "Wichtig bei externen Partnern."
       options:
-        - "Battery Passport - S Edition (BBP-S)"
-        - "Keine SaaS-Applikation"
+        - "NDA liegt bereits vor / unterzeichnet"
+        - "Nicht erforderlich (Internes Bosch-Geschäft)"
+        - "NDA-Prüfung ausstehend"
     validations:
-      required: false
+      required: true
+
+  - type: dropdown
+    id: laenderfreigabe
+    attributes:
+      label: "Länderfreigabe"
+      description: "Ist das Land für die Erbringung freigegeben?"
+      options:
+        - "Länderfreigabe erteilt"
+        - "Sonderfreigabe erforderlich / beantragt"
+    validations:
+      required: true
+
+  # ==========================================
+  # SEKTION 4: SOFTWARE-AS-A-SERVICE
+  # ==========================================
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 4. Software-as-a-Service (SaaS) Tarife
+
+  - type: dropdown
+    id: saas_produkt
+    attributes:
+      label: "Wähle das SaaS-Produkt aus:"
+      description: "Diese Optionen entsprechen exakt den IDs in deinem Datenkatalog."
+      options:
+        - "PAS-BP-S: PAS Battery Passport S (39.900,00 € / Jahr)"
+        - "PAS-BP-M: PAS Battery Passport M (59.200,00 € / Jahr)"
+        - "PAS-BP-L: PAS Battery Passport L (102.000,00 € / Jahr)"
+        - "PAS-BP-XL: PAS Battery Passport XL (190.000,00 € / Jahr)"
+        - "PAS-SS-SS: PAS Semantic Stack Starter (0,00 € / Jahr)"
+        - "PAS-SS-S: PAS Semantic Stack S (42.000,00 € / Jahr)"
+        - "PAS-SS-M: PAS Semantic Stack M (113.500,00 € / Jahr)"
+        - "PAS-SS-L: PAS Semantic Stack L (340.000,00 € / Jahr)"
+        - "PAS-SS-XL: PAS Semantic Stack XL (1.030.000,00 € / Jahr)"
+        - "AAI-EXPLORE: Agentic AI Explore (35.000,00 € / Jahr)"
+        - "AAI-SCALE: Agentic AI Scale (145.000,00 € / Jahr)"
+        - "AAI-TRANSFORM: Agentic AI Transform (415.000,00 € / Jahr)"
+        - "Kein SaaS-Produkt (Nur Dienstleistung)"
+    validations:
+      required: true
 
   - type: input
     id: saas_menge
     attributes:
-      label: "🔢 SaaS Menge / Einheit"
-      placeholder: "z.B. 1 Lizenz / 10.000 Twins"
+      label: "Menge / Einheiten (Standard = 1 LE)"
+      placeholder: "1"
     validations:
-      required: false
+      required: true
+
+  - type: dropdown
+    id: saas_rabatt
+    attributes:
+      label: "Rabatt auf SaaS-Komponenten"
+      options:
+        - "0%"
+        - "5%"
+        - "10%"
+        - "Sonderkondition"
+    validations:
+      required: true
+
+  # ==========================================
+  # SEKTION 5: SERVICES & PROFESSIONAL SERVICES
+  # ==========================================
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 5. Professional Services (Optionale Dienstleistungen)
+
+  - type: dropdown
+    id: service_produkt
+    attributes:
+      label: "Wähle das Dienstleistungsprodukt aus:"
+      options:
+        - "PAS-SC: PAS Solution Consulting (1.560,00 € / Personentag)"
+        - "AAI-II: AAI IT Integration Services (1.560,00 € / Personentag)"
+        - "Keine Dienstleistung benötigt"
+
+  - type: input
+    id: service_tage
+    attributes:
+      label: "Gewünschtes Dienstleistungsvolumen (in Personentagen)"
+      placeholder: "z.B. 10"
+
+  - type: dropdown
+    id: reisekosten
+    attributes:
+      label: "Reisekosten-Regelung"
+      options:
+        - "Abrechnung nach tatsächlichem Aufwand (Bosch-Reiserichtlinie)"
+        - "Reisekostenpauschale vereinbart"
+        - "Keine Reisekosten (Ausschließlich Remote-Erbringung)"
+
+  - type: textarea
+    id: service_text
+    attributes:
+      label: "Positionstext Dienstleistung"
+      description: "Beschreibe hier kurz, welche Aufgaben bei der Dienstleistung übernommen werden."
+      placeholder: "z.B. Unterstützung bei der Systemintegration, Anbindung an Fabrik-MES-Systeme..."
